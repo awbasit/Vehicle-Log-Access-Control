@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <h1>Company Dashboard</h1>
+      <button class="logout-button" onclick="logout()">Logout</button>
+    </header>
+    <div class="container">
+      <section class="card" id="user-section" onclick="user()">
+        <h2>User</h2>
+        <div class="content">
+          <p>Details about users will be displayed here.</p>
+        </div>
+      </section>
+      <section class="card" id="logs-section" onclick="logs()">
+        <h2>Logs</h2>
+        <div class="content">
+          <p>Logs data will be displayed here.</p>
+        </div>
+      </section>
+      <!-- <section class="card" id="access-section" onclick="access()">
+        <h2>Access</h2>
+        <div class="content">
+          <p>Access details will be displayed here.</p>
+        </div>
+      </section> -->
+    </div>
+  </div>
+  <footer>
+    <p>You are welcome to the TAGG Vehicle Logs and Access Interface</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
