@@ -1,5 +1,6 @@
 const { Pool } = require("pg");
 
+// These are the credentials for the database access
 const pool = new Pool({
   user: "postgres",
   host: "localhost",

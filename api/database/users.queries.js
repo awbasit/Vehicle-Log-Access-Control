@@ -1,3 +1,4 @@
+// Queries to handle the request for the owners 
 const ownerQueries = {
     getAllQuery: "SELECT * FROM access",
     getOneQuery: "SELECT * FROM access WHERE employee_id = $1",

@@ -2,9 +2,9 @@ const BaseController = require("./base.controller");
 const ownerQueries = require("../database/users.queries");
 
 // Define the OwnerController class
+// The LogsController class extends the functionalities of the BaseController
 class OwnerController extends BaseController {
   constructor(pool) {
-    console.log("go");
     super(pool, "access", ownerQueries);
   }
 }

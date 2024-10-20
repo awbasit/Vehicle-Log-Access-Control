@@ -1,6 +1,7 @@
 // scripts.js
 'use strict';
 
+// console.log(process.env.OWNERS_IP);
 function handleLogin(event) {
   event.preventDefault(); // Prevent the form from submitting the traditional way
 
@@ -39,9 +40,10 @@ function goBack() {
   window.location.href = "index.html"; // Redirect back to dashboard
 }
 
+// This function loads the user details to the frontend
 async function loadUsers() {
   try {
-    const response = await fetch('http://localhost:5001/api/v1/owners');
+    const response = await fetch("http://localhost:5001/api/v1/owners");
     const users = await response.json();
     const userContent = document.getElementById('user-content');
     userContent.innerHTML = '';
@@ -55,9 +57,10 @@ async function loadUsers() {
   }
 }
 
+// This function loads the logs details to the frontend
 async function loadLogs() {
   try {
-    const response = await fetch('http://localhost:5001/api/v1/logs');
+    const response = await fetch("http://localhost:5001/api/v1/logs");
     const logs = await response.json();
     const logsContent = document.getElementById('logs-content');
     logsContent.innerHTML = '';
